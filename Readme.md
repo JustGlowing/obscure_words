@@ -16,6 +16,7 @@ and use it as follows:
 ```python
 >>> from obscure_words import scrape_obscure_words
 >>> obscure_dict = scrape_obscure_words()
->>> obscure_dict['ophidiomancy']                                                                                                               
+>>> obscure_dict['ophidiomancy']
+
 'divination using snakes'
 ```
