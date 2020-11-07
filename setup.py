@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from distutils.core import setup, find_packages
+from distutils.core import setup
 
 description = 'Dictionary of Obscure Words'
 keywords = ['vocabulary', 'nlp', 'obscure']
@@ -10,7 +10,7 @@ setup(name='obscure_words',
       author='Giuseppe Vettigli',
       package_data={'': ['Readme.md']},
       include_package_data=True,
-      py_modules=find_packages(),
+      packages=['obscure_words', 'obscure_words.data'],
       requires=['pandas'],
       url='https://github.com/JustGlowing/obscure_words',
       keywords=keywords)
