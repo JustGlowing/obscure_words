@@ -20,3 +20,4 @@ and use it as follows:
 
 'divination using snakes'
 ```
+:book: :crystal_ball: :snake:
