@@ -14,8 +14,8 @@ pip install git+https://github.com/JustGlowing/obscure_words
 and use it as follows:
 
 ```python
->>> from obscure_words import scrape_obscure_words
->>> obscure_dict = scrape_obscure_words()
+>>> from obscure_words import load_obscure_words
+>>> obscure_dict = load_obscure_words()
 >>> obscure_dict['ophidiomancy']
 
 'divination using snakes'

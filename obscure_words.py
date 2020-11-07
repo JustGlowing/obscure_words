@@ -1,8 +1,11 @@
+import importlib.resources as pkg_resources
+import data
+import json
 import pandas as pd
 
 def scrape_obscure_words(verbose=True):
 	"""
-	Thus function scrapes the dictionary of obscure words from
+	Scrapes the dictionary of obscure words from
 
 		http://phrontistery.info
 	"""
@@ -19,3 +22,10 @@ def scrape_obscure_words(verbose=True):
 	if verbose:
 		print('Congratulations, you downloaded %d obscure words.' % len(obscure_dictionary))
 	return obscure_dictionary
+
+def load_obscure_words():
+	"""
+	Returns the dictionary of obscure words.
+	"""
+	d = pkg_resources.open_text(data, 'obscure_dict.json')
+	return json.load(d)
