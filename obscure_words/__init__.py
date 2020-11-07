@@ -3,7 +3,7 @@ try:
 except ImportError:
     # Try backported to PY<37 `importlib_resources`.
     import importlib_resources as pkg_resources
-import data
+from . import data
 import json
 import pandas as pd
 
